@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="movie-server" />
+        <module name="gateway-server" />
+        <module name="common-server" />
+        <module name="order-server" />
+        <module name="account-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accont-server" target="8" />
+      <module name="account-server" target="8" />
+      <module name="common-server" target="8" />
+      <module name="commons-server" target="8" />
+      <module name="gateway-server" target="8" />
+      <module name="movie-server" target="8" />
+      <module name="order-server" target="8" />
+      <module name="parent" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="accont-server" options="" />
+      <module name="account-server" options="" />
+      <module name="common-server" options="" />
+      <module name="commons-server" options="-parameters" />
+      <module name="gateway-server" options="" />
+      <module name="movie-server" options="" />
+      <module name="order-server" options="" />
+    </option>
+  </component>
+</project>

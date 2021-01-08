@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_cinema?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 113797
+  application:
+    name: order-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  redis:
+    host: 111.229.91.143
+    port: 6379
+server:
+  servlet:
+    context-path: /order
+  port: 8889
+rocketmq:
+  name-server: 111.229.91.143:9876
+  producer:
+    group: movie
